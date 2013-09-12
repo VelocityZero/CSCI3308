@@ -1,5 +1,6 @@
 ###LAB2
 ###Coded By: Brian Bauer
+###Github Repository: https://github.com/VelocityZero/CSCI3308/tree/master/lab2
 
 #Part1: Hellow World
 class HelloWorldClass
