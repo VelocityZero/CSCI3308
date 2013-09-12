@@ -1,0 +1,29 @@
+#Dessert Class
+class Dessert
+	def initialize(name, calories)
+		@name = name.capitalize
+		@calories = calories
+	end
+
+	def healthy?
+		return @calories < 200
+	end
+	
+	def delicious?
+		return true	
+	end
+end
+
+#Jellybean Class, Extension of Dessert
+class JellyBean < Dessert
+	def initialize(name, calories, flavor)
+		@flavor = flavor
+	end
+
+	def delicious?
+		if "black licorice" == flavor.downcase
+			return false;		
+		end
+		return true
+	end
+end
