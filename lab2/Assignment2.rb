@@ -36,18 +36,6 @@ class JellyBean < Dessert
 	end
 end
 
-#Test#
-puts "PART 1 - Classes"
-black = JellyBean.new('Jelly Bean', 400, 'black licorice')
-yellow = JellyBean.new('Jelly Bean', 100, 'idk')
-cake = Dessert.new('black licorice', 200)
-puts black.healthy?
-puts black.delicious?
-puts yellow.delicious?
-puts cake.healthy?
-puts cake.delicious?
-puts "\n"
-
 ##PART 2##
 
 class Class
@@ -62,19 +50,6 @@ class Class
 			end'
 	end
 end
-
-#Test#
-class Foo
-    attr_accessor_with_history :bar
-end
-puts "PART 2 - Object Oriented Programming".upcase
-f = Foo.new
-f.bar = 1
-f.bar = 2
-f = Foo.new
-p f.bar = 4
-p f.bar_history
-puts "\n"
 
 ##PART 3##
 
@@ -116,16 +91,6 @@ module Enumerable
 	end
 end
 
-
-#Test#
-puts "PART 3 - More OOP"
-puts "10 rupees in euro = " + 10.rupees.in(:euro).to_s
-puts "0.14705882352941177 euros in rupees = " + 0.14705882352941177.euros.in(:rupees).to_s
-puts "1 dollar in rupees = " + 1.dollar.in(:rupees).to_s
-puts "racecar.palindrome? = " + "racecar".palindrome?.to_s
-puts "[1,2,3,2,1].palindrome? = " + [1,2,3,2,1].palindrome?.to_s
-puts "\n"
-
 ##PART 4##
 class CartesianProduct
     include Enumerable
@@ -137,10 +102,43 @@ class CartesianProduct
 	end
 end
 
-#Test#
+##Test##
+=begin
+puts "PART 1 - Classes"
+black = JellyBean.new('Jelly Bean', 400, 'black licorice')
+yellow = JellyBean.new('Jelly Bean', 100, 'idk')
+cake = Dessert.new('black licorice', 200)
+puts black.healthy?
+puts black.delicious?
+puts yellow.delicious?
+puts cake.healthy?
+puts cake.delicious?
+puts "\n"
+
+puts "PART 2 - Object Oriented Programming".upcase
+class Foo
+    attr_accessor_with_history :bar
+end
+
+f = Foo.new
+f.bar = 1
+f.bar = 2
+f = Foo.new
+p f.bar = 4
+p f.bar_history
+puts "\n"
+
+puts "PART 3 - More OOP"
+puts "10 rupees in euro = " + 10.rupees.in(:euro).to_s
+puts "0.14705882352941177 euros in rupees = " + 0.14705882352941177.euros.in(:rupees).to_s
+puts "1 dollar in rupees = " + 1.dollar.in(:rupees).to_s
+puts "racecar.palindrome? = " + "racecar".palindrome?.to_s
+puts "[1,2,3,2,1].palindrome? = " + [1,2,3,2,1].palindrome?.to_s
+puts "\n"
+
 puts "PART4 - Cartesian Product"
 c = CartesianProduct.new([:a,:b], [4,5])
 c.each { |elt| puts elt.inspect }
-
 c = CartesianProduct.new([:a,:b], [])
 c.each { |elt| puts elt.inspect }
+=end
